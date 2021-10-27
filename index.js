@@ -62,4 +62,8 @@ for (let i = 0; i < numberRememberedArray.length; i++) {
     }
 }
 
-alert(`You rememberd ${count} numbers out of ${randomNumberArray.length}!`);
+function resultMessage(){
+    alert(`You rememberd ${count} numbers out of ${randomNumberArray.length}!`);
+}
+
+resultMessage();

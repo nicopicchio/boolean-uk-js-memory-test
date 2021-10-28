@@ -51,13 +51,11 @@ numberRememberedArray.push(numberRememberedOne);
 numberRememberedArray.push(numberRememberedTwo);
 numberRememberedArray.push(numberRememberedThree);
 numberRememberedArray.push(numberRememberedFour);
-numberRememberedArray.join('\n\n');
 
 let count = 0;
 
 for (let i = 0; i < numberRememberedArray.length; i++) {
-    const numbersToString = randomNumberArray[i].toString();
-    if (numberRememberedArray[i] === numbersToString) {
+    if (Number(numberRememberedArray[i]) === randomNumberArray[i]) {
         count++;
     }
 }

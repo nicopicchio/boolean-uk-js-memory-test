@@ -22,4 +22,4 @@ function checkUserNumbers() {
     alert(`You guessed ${count} numbers out of ${getRandomNumberArray.length}`);
 }
 
-setTimeout(checkUserNumbers, 5000);
+setTimeout(checkUserNumbers, 15000);

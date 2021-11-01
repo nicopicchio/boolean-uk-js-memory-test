@@ -30,27 +30,23 @@ Etc...
 Enjoy!
 */
 
-const numberOne = Math.floor((Math.random() * 100) + 1);
-const numnberTwo = Math.floor((Math.random() * 100) + 1);
-const numberThree = Math.floor((Math.random() * 100) + 1);
-const numberFour = Math.floor((Math.random() * 100) + 1);
+function getRandomNumber(max) {
+    return Math.ceil(Math.random() * 100);
+}
+
 const randomNumberArray = []
-randomNumberArray.push(numberOne);
-randomNumberArray.push(numnberTwo);
-randomNumberArray.push(numberThree);
-randomNumberArray.push(numberFour);
-alert(randomNumberArray.join('\n\n'));
+for (let i = 0; i < 4; i++) {
+    randomNumberArray.push(getRandomNumber(100));
+}
+
+alert(`These are your random numbers: ${randomNumberArray.join('\n')}`);
 
 
-const numberRememberedOne = prompt(`Please enter the first number`);
-const numberRememberedTwo = prompt(`Please enter the second number`);
-const numberRememberedThree = prompt(`Please enter the third number`);
-const numberRememberedFour = prompt(`Please enter the fourth number`);
 const numberRememberedArray = [];
-numberRememberedArray.push(numberRememberedOne);
-numberRememberedArray.push(numberRememberedTwo);
-numberRememberedArray.push(numberRememberedThree);
-numberRememberedArray.push(numberRememberedFour);
+for (let i = 0; i < 4; i++) {
+    const numberRemembered = Number(prompt(`Please enter the numbers in the order they appeared`))
+    numberRememberedArray.push(numberRemembered);
+}
 
 let count = 0;
 
